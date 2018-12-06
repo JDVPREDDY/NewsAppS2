@@ -50,7 +50,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderCallbacks<L
         uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("page-size", minItems);
         uriBuilder.appendQueryParameter("orderby", "time");
-        
+
         if (!section.equals(getString(R.string.settings_section_news_default))) {
             uriBuilder.appendQueryParameter("section", section);
         }
